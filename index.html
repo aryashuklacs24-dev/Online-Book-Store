@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookVerse | Online Book Store</title>
+  <meta name="description" content="BookVerse is a modern online bookstore with featured books, categories, and reader support." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container navbar">
+      <a href="index.html" class="logo">BookVerse</a>
+      <button class="nav-toggle" aria-label="Open navigation">☰</button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Find Your Next Favorite Book</h1>
+          <p>Explore trending titles from programming, fiction, self-help, science, and business. Discover stories, ideas, and knowledge that inspire readers every day.</p>
+          <a href="books.html" class="btn btn-primary">Shop Now</a>
+        </div>
+        <div>
+          <img class="hero-image" src="images/hero.jpg" alt="Bookshelf with books" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Categories</h2>
+        <p class="section-subtitle">Browse hand-picked collections crafted for curious readers and professionals.</p>
+        <div class="categories-grid">
+          <a class="category-pill" href="books.html?category=programming">Programming</a>
+          <a class="category-pill" href="books.html?category=fiction">Fiction</a>
+          <a class="category-pill" href="books.html?category=selfhelp">Self Help</a>
+          <a class="category-pill" href="books.html?category=science">Science</a>
+          <a class="category-pill" href="books.html?category=business">Business</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Books</h2>
+        <p class="section-subtitle">A selection of top-rated reads chosen for learning, imagination, and growth.</p>
+        <div class="book-grid">
+          <article class="book-card" data-category="programming">
+            <img src="images/book1.jpg" alt="Clean Code book" />
+            <div class="book-content">
+              <h3>Clean Code</h3>
+              <div class="book-meta">
+                <span class="book-author">Robert C. Martin</span>
+                <span class="price">$24</span>
+              </div>
+              <div class="book-meta">
+                <span class="rating">★★★★★ 4.9</span>
+                <span>Programming</span>
+              </div>
+              <div class="book-actions">
+                <button class="btn btn-primary">Buy</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card" data-category="fiction">
+            <img src="images/book2.jpg" alt="The Midnight Library" />
+            <div class="book-content">
+              <h3>The Midnight Library</h3>
+              <div class="book-meta">
+                <span class="book-author">Matt Haig</span>
+                <span class="price">$18</span>
+              </div>
+              <div class="book-meta">
+                <span class="rating">★★★★★ 4.8</span>
+                <span>Fiction</span>
+              </div>
+              <div class="book-actions">
+                <button class="btn btn-primary">Buy</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card" data-category="selfhelp">
+            <img src="images/book3.jpg" alt="Atomic Habits book" />
+            <div class="book-content">
+              <h3>Atomic Habits</h3>
+              <div class="book-meta">
+                <span class="book-author">James Clear</span>
+                <span class="price">$22</span>
+              </div>
+              <div class="book-meta">
+                <span class="rating">★★★★★ 4.9</span>
+                <span>Self Help</span>
+              </div>
+              <div class="book-actions">
+                <button class="btn btn-primary">Buy</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card" data-category="science">
+            <img src="images/book4.jpg" alt="A Brief History of Time" />
+            <div class="book-content">
+              <h3>A Brief History of Time</h3>
+              <div class="book-meta">
+                <span class="book-author">Stephen Hawking</span>
+                <span class="price">$20</span>
+              </div>
+              <div class="book-meta">
+                <span class="rating">★★★★★ 4.7</span>
+                <span>Science</span>
+              </div>
+              <div class="book-actions">
+                <button class="btn btn-primary">Buy</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card" data-category="business">
+            <img src="images/book5.jpg" alt="Rich Dad Poor Dad book" />
+            <div class="book-content">
+              <h3>Rich Dad Poor Dad</h3>
+              <div class="book-meta">
+                <span class="book-author">Robert T. Kiyosaki</span>
+                <span class="price">$19</span>
+              </div>
+              <div class="book-meta">
+                <span class="rating">★★★★★ 4.8</span>
+                <span>Business</span>
+              </div>
+              <div class="book-actions">
+                <button class="btn btn-primary">Buy</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card" data-category="programming">
+            <img src="images/book6.jpg" alt="JavaScript book" />
+            <div class="book-content">
+              <h3>JavaScript for Beginners</h3>
+              <div class="book-meta">
+                <span class="book-author">Chris Hill</span>
+                <span class="price">$27</span>
+              </div>
+              <div class="book-meta">
+                <span class="rating">★★★★★ 4.6</span>
+                <span>Programming</span>
+              </div>
+              <div class="book-actions">
+                <button class="btn btn-primary">Buy</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Why Choose Us</h2>
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon">🚚</div>
+            <h3>Fast Delivery</h3>
+            <p>Quick dispatch and nationwide delivery so your books reach you without delay.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">💸</div>
+            <h3>Best Prices</h3>
+            <p>Enjoy affordable prices and regular discounts on bestselling titles.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">🕒</div>
+            <h3>24x7 Support</h3>
+            <p>Our customer care team is here anytime to help with orders and recommendations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section newsletter">
+      <div class="container newsletter-grid">
+        <div>
+          <h2 class="section-title" style="text-align:left; margin-bottom: 8px;">Join Our Newsletter</h2>
+          <p class="section-subtitle" style="text-align:left; margin: 0;">Get the latest book drops, special discounts, and reading inspiration delivered to your inbox.</p>
+        </div>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" placeholder="Enter your email" aria-label="Email address" required />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>BookVerse</h4>
+        <p>Your favorite destination for discovering new stories, ideas, and knowledge.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>support@bookverse.com</li>
+          <li>+1 555 123 4567</li>
+          <li>New York, USA</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#">f</a>
+          <a href="#">in</a>
+          <a href="#">x</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 2026 BookVerse. All rights reserved.</div>
+  </footer>
+
+  <button id="scroll-top" class="scroll-top-btn" aria-label="Scroll to top">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

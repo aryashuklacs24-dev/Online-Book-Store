@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Books | BookVerse</title>
+  <meta name="description" content="Browse all books in BookVerse, search by title, and compare popular titles." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container navbar">
+      <a href="index.html" class="logo">BookVerse</a>
+      <button class="nav-toggle" aria-label="Open navigation">☰</button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html" class="active">Books</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Explore Our Complete Library</h1>
+        <p>Search, filter, compare, and discover books from all major categories.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters">
+          <input id="book-search" class="search-bar" type="search" placeholder="Search by title, author, or description" />
+        </div>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="programming">Programming</button>
+          <button class="filter-btn" data-filter="fiction">Fiction</button>
+          <button class="filter-btn" data-filter="selfhelp">Self Help</button>
+          <button class="filter-btn" data-filter="science">Science</button>
+          <button class="filter-btn" data-filter="business">Business</button>
+        </div>
+
+        <div class="book-grid">
+          <article class="book-card" data-category="programming">
+            <img src="images/book1.jpg" alt="Clean Code" />
+            <div class="book-content">
+              <h3>Clean Code</h3>
+              <div class="book-meta"><span class="book-author">Robert C. Martin</span><span class="price">$24</span></div>
+              <div class="book-meta"><span class="rating">★★★★★ 4.9</span><span>Programming</span></div>
+              <p class="book-description">A foundational guide to writing readable, maintainable software with confidence.</p>
+              <div class="book-actions"><a class="btn btn-primary" href="#comparison">View Details</a></div>
+            </div>
+          </article>
+
+          <article class="book-card" data-category="fiction">
+            <img src="images/book2.jpg" alt="The Midnight Library" />
+            <div class="book-content">
+              <h3>The Midnight Library</h3>
+              <div class="book-meta"><span class="book-author">Matt Haig</span><span class="price">$18</span></div>
+              <div class="book-meta"><span class="rating">★★★★★ 4.8</span><span>Fiction</span></div>
+              <p class="book-description">A moving novel that blends philosophy, hope, and second chances through every decision.</p>
+              <div class="book-actions"><a class="btn btn-primary" href="#comparison">View Details</a></div>
+            </div>
+          </article>
+
+          <article class="book-card" data-category="selfhelp">
+            <img src="images/book3.jpg" alt="Atomic Habits" />
+            <div class="book-content">
+              <h3>Atomic Habits</h3>
+              <div class="book-meta"><span class="book-author">James Clear</span><span class="price">$22</span></div>
+              <div class="book-meta"><span class="rating">★★★★★ 4.9</span><span>Self Help</span></div>
+              <p class="book-description">A practical blueprint for forming better habits and breaking old patterns effectively.</p>
+              <div class="book-actions"><a class="btn btn-primary" href="#comparison">View Details</a></div>
+            </div>
+          </article>
+
+          <article class="book-card" data-category="science">
+            <img src="images/book4.jpg" alt="A Brief History of Time" />
+            <div class="book-content">
+              <h3>A Brief History of Time</h3>
+              <div class="book-meta"><span class="book-author">Stephen Hawking</span><span class="price">$20</span></div>
+              <div class="book-meta"><span class="rating">★★★★★ 4.7</span><span>Science</span></div>
+              <p class="book-description">An insightful journey through space, time, and the mysteries of the universe.</p>
+              <div class="book-actions"><a class="btn btn-primary" href="#comparison">View Details</a></div>
+            </div>
+          </article>
+
+          <article class="book-card" data-category="business">
+            <img src="images/book5.jpg" alt="Rich Dad Poor Dad" />
+            <div class="book-content">
+              <h3>Rich Dad Poor Dad</h3>
+              <div class="book-meta"><span class="book-author">Robert T. Kiyosaki</span><span class="price">$19</span></div>
+              <div class="book-meta"><span class="rating">★★★★★ 4.8</span><span>Business</span></div>
+              <p class="book-description">A financial classic that challenges readers to rethink money, wealth, and opportunity.</p>
+              <div class="book-actions"><a class="btn btn-primary" href="#comparison">View Details</a></div>
+            </div>
+          </article>
+
+          <article class="book-card" data-category="programming">
+            <img src="images/book6.jpg" alt="JavaScript for Beginners" />
+            <div class="book-content">
+              <h3>JavaScript for Beginners</h3>
+              <div class="book-meta"><span class="book-author">Chris Hill</span><span class="price">$27</span></div>
+              <div class="book-meta"><span class="rating">★★★★★ 4.6</span><span>Programming</span></div>
+              <p class="book-description">A practical beginner roadmap to front-end development, DOM, and real web logic.</p>
+              <div class="book-actions"><a class="btn btn-primary" href="#comparison">View Details</a></div>
+            </div>
+          </article>
+
+          <article class="book-card" data-category="fiction">
+            <img src="images/book7.jpg" alt="The Alchemist" />
+            <div class="book-content">
+              <h3>The Alchemist</h3>
+              <div class="book-meta"><span class="book-author">Paulo Coelho</span><span class="price">$16</span></div>
+              <div class="book-meta"><span class="rating">★★★★★ 4.7</span><span>Fiction</span></div>
+              <p class="book-description">A timeless tale about purpose, courage, and following your personal legend.</p>
+              <div class="book-actions"><a class="btn btn-primary" href="#comparison">View Details</a></div>
+            </div>
+          </article>
+
+          <article class="book-card" data-category="science">
+            <img src="images/book8.jpg" alt="Cosmos" />
+            <div class="book-content">
+              <h3>Cosmos</h3>
+              <div class="book-meta"><span class="book-author">Carl Sagan</span><span class="price">$21</span></div>
+              <div class="book-meta"><span class="rating">★★★★★ 4.9</span><span>Science</span></div>
+              <p class="book-description">A visionary exploration of astronomy, space, and life in the universe.</p>
+              <div class="book-actions"><a class="btn btn-primary" href="#comparison">View Details</a></div>
+            </div>
+          </article>
+
+          <article class="book-card" data-category="business">
+            <img src="images/book9.jpg" alt="The Lean Startup" />
+            <div class="book-content">
+              <h3>The Lean Startup</h3>
+              <div class="book-meta"><span class="book-author">Eric Ries</span><span class="price">$25</span></div>
+              <div class="book-meta"><span class="rating">★★★★★ 4.8</span><span>Business</span></div>
+              <p class="book-description">A smart and practical book on building businesses through experimentation and feedback.</p>
+              <div class="book-actions"><a class="btn btn-primary" href="#comparison">View Details</a></div>
+            </div>
+          </article>
+
+          <article class="book-card" data-category="selfhelp">
+            <img src="images/book10.jpg" alt="The Power of Now" />
+            <div class="book-content">
+              <h3>The Power of Now</h3>
+              <div class="book-meta"><span class="book-author">Eckhart Tolle</span><span class="price">$17</span></div>
+              <div class="book-meta"><span class="rating">★★★★★ 4.6</span><span>Self Help</span></div>
+              <p class="book-description">A bestselling mindfulness guide encouraging presence, clarity, and inner peace.</p>
+              <div class="book-actions"><a class="btn btn-primary" href="#comparison">View Details</a></div>
+            </div>
+          </article>
+
+          <article class="book-card" data-category="fiction">
+            <img src="images/book11.jpg" alt="The Book Thief" />
+            <div class="book-content">
+              <h3>The Book Thief</h3>
+              <div class="book-meta"><span class="book-author">Markus Zusak</span><span class="price">$18</span></div>
+              <div class="book-meta"><span class="rating">★★★★★ 4.8</span><span>Fiction</span></div>
+              <p class="book-description">A compelling story of resilience, memory, and the power of words under difficult times.</p>
+              <div class="book-actions"><a class="btn btn-primary" href="#comparison">View Details</a></div>
+            </div>
+          </article>
+
+          <article class="book-card" data-category="programming">
+            <img src="images/book12.jpg" alt="HTML & CSS Design" />
+            <div class="book-content">
+              <h3>HTML & CSS Design</h3>
+              <div class="book-meta"><span class="book-author">Jon Duckett</span><span class="price">$29</span></div>
+              <div class="book-meta"><span class="rating">★★★★★ 4.5</span><span>Programming</span></div>
+              <p class="book-description">An accessible visual guide to building elegant and responsive websites from scratch.</p>
+              <div class="book-actions"><a class="btn btn-primary" href="#comparison">View Details</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="comparison" class="section">
+      <div class="container">
+        <h2 class="section-title">Book Comparison Table</h2>
+        <div class="table-card">
+          <table class="table-comparison">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Availability</th>
+                <th>Rating</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Clean Code</td><td>Robert C. Martin</td><td>Programming</td><td>$24</td><td>In Stock</td><td>4.9</td></tr>
+              <tr><td>The Midnight Library</td><td>Matt Haig</td><td>Fiction</td><td>$18</td><td>In Stock</td><td>4.8</td></tr>
+              <tr><td>Atomic Habits</td><td>James Clear</td><td>Self Help</td><td>$22</td><td>Low Stock</td><td>4.9</td></tr>
+              <tr><td>A Brief History of Time</td><td>Stephen Hawking</td><td>Science</td><td>$20</td><td>In Stock</td><td>4.7</td></tr>
+              <tr><td>Rich Dad Poor Dad</td><td>Robert T. Kiyosaki</td><td>Business</td><td>$19</td><td>In Stock</td><td>4.8</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Top Authors</h2>
+        <div class="authors-grid">
+          <article class="author-card">
+            <img src="images/author1.jpg" alt="Author portrait" />
+            <h3>Robert C. Martin</h3>
+            <p>Known for bringing clean coding principles to software engineers worldwide.</p>
+          </article>
+          <article class="author-card">
+            <img src="images/author2.jpg" alt="Author portrait" />
+            <h3>James Clear</h3>
+            <p>A modern productivity writer helping readers transform behavior with simple systems.</p>
+          </article>
+          <article class="author-card">
+            <img src="images/author3.jpg" alt="Author portrait" />
+            <h3>Stephen Hawking</h3>
+            <p>Renowned scientist and author whose books made profound ideas accessible to all.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Customer Reviews</h2>
+        <div class="reviews-grid">
+          <article class="review-card">
+            <img src="images/author1.jpg" alt="Customer portrait" />
+            <h3>Ana</h3>
+            <p>“The collection is curated beautifully and the search makes finding books effortless.”</p>
+          </article>
+          <article class="review-card">
+            <img src="images/author2.jpg" alt="Customer portrait" />
+            <h3>Rohit</h3>
+            <p>“I found both fiction and technical books in one place. Delivery and support were excellent.”</p>
+          </article>
+          <article class="review-card">
+            <img src="images/author3.jpg" alt="Customer portrait" />
+            <h3>Maria</h3>
+            <p>“BookVerse feels premium, modern, and very easy to browse for college projects and real stores.”</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">FAQ</h2>
+        <div class="faq-list">
+          <article class="faq-item">
+            <h4>How do I search for books?</h4>
+            <p>Use the search bar to look up a book by title, author, or description.</p>
+          </article>
+          <article class="faq-item">
+            <h4>Can I compare books?</h4>
+            <p>Yes, the comparison table highlights pricing, availability, and ratings for featured books.</p>
+          </article>
+          <article class="faq-item">
+            <h4>Do you offer support?</h4>
+            <p>Yes, our customer support is available 24x7 through the contact page.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>BookVerse</h4>
+        <p>Discover books that connect learning with inspiration.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>support@bookverse.com</li>
+          <li>+1 555 123 4567</li>
+          <li>New York, USA</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#">f</a>
+          <a href="#">in</a>
+          <a href="#">x</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 2026 BookVerse. All rights reserved.</div>
+  </footer>
+
+  <button id="scroll-top" class="scroll-top-btn" aria-label="Scroll to top">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
